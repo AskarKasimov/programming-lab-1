@@ -1,0 +1,1 @@
+Main-Class: ru.itmo.prog.samples.Main
