@@ -28,7 +28,7 @@ public class Main {
     private static void printMatrix(double[][] matrix) {
         for (double[] i : matrix) {
             for (double j : i) {
-                System.out.print(String.format("%.2f", j) + " ");
+                System.out.print(String.format("%5.2f", j) + " ");
             }
             System.out.println();
         }
@@ -43,10 +43,10 @@ public class Main {
         // task #2
         Random r = new Random();
         for (int i = 0; i < x.length; i++) {
-            //if (r.nextBoolean()) {
-              //  x[i] = 7.0; // including 7.0 (lol)
-               // continue;
-            //}
+            if (r.nextBoolean()) {
+                x[i] = 7.0; // including 7.0 (lol)
+                continue;
+            }
             x[i] = -7 + (14) * r.nextDouble();
         }
 
