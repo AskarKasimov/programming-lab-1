@@ -28,7 +28,7 @@ public class Main {
     private static void printMatrix(double[][] matrix) {
         for (double[] i : matrix) {
             for (double j : i) {
-                System.out.print(String.format("%5.2f", j) + " ");
+                System.out.print(String.format("%-5.2f", j) + " ");
             }
             System.out.println();
         }
